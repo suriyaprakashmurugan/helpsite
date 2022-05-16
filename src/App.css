@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+*{
+    /* font-family: 'sans-serif'; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    box-shadow: 1px 1px 16px rgb(155, 154, 154);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-img{
+    width: 18px;
+    height: 12px;
+    margin-right: 5px;
+}
+.nav-list li{
+    margin: 0px 16px;
+}
+.nav-list li i{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.nav-list li button{
+    padding: 5px 10px;
+    background-color: #ededed;
+    border-radius: 25px;
+    border: none;
+}
+.nav a{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        box-shadow: 1px 1px 16px rgb(155, 154, 154);
+    }
+    .nav li {display: none;}
+    .nav a{
+        float: right;
+        display: block;
+        text-decoration: none;
+        color: #09384c;
+    }
+    .nav a i{
+        margin: 0px 10px;
+    }
+}
+.container
+{
+    width: 60%;
+}
+.backimg
+{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 50%;
+    position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head .head-cont{
+    text-align: center;
+    padding-top: 65px;
+    margin-bottom: 110px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head .head-cont h1{
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #09384c;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head .head-cont span{
+    font-size: 22px;
+    color: #495555;
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+    padding: 20px 40px;
+    margin: 20px 0px;
+    box-shadow: 1px 2px 16px rgb(160, 159, 159);
+    border-radius: 10px;
 }
+.topcard{
+    display: none;
+}
+.card-con{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card .card-icon{
+    font-size: 50px;
+    margin-right: 36px;
+    color: #de5976;
+}
+.togglebut
+{
+    border: none;
+    background-color: transparent;
+}
+.imgset{
+    margin: 0 auto;
+}
+.cardimg
+{
+    width: 50px;
+    height: 50px;
+    margin: 25px 20px;
+}
+.btn{
+    width: 200px;
+    margin: 0px auto;
+}
+@media screen and (max-width: 600px) {
+    .topcard{
+        display: block;
+    }
+    .container{
+        width: 95%;
+    }
+    .cardimg{
+        margin: 10px 7px;
+    }
+}
+.cardlow
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 36px;
 }
